@@ -87,7 +87,7 @@ namespace AutoKey
 
         private void Update_menu_Click(object sender, EventArgs e)
         {
-            WebRequest wr = WebRequest.Create(new Uri("https://github.com/fangdai"));
+            WebRequest wr = WebRequest.Create(new Uri("https://raw.githubusercontent.com/fangdai/AutoKey/master/Version.txt?token=ADG6G3S2DXJAVJBRIM4VHO26QRZE2"));
             WebResponse ws = wr.GetResponse();
             StreamReader sr = new StreamReader(ws.GetResponseStream());
 
