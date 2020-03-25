@@ -96,11 +96,11 @@ namespace AutoKey
 
             if (currentversion.Contains(newversion))
             {
-                Console.WriteLine("Version is up to date!");
+                MessageBox.Show("Version is up to date!");
             }
             else
             {
-                Console.WriteLine("New version is available for download now! Please go to the website and check it out!");
+                MessageBox.Show("New version is available for download now! Please go to the website and check it out!");
             }
             Console.ReadLine();
         }
