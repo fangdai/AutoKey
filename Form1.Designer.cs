@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -145,14 +146,14 @@
             // info_menu
             // 
             this.info_menu.Name = "info_menu";
-            this.info_menu.Size = new System.Drawing.Size(180, 22);
+            this.info_menu.Size = new System.Drawing.Size(121, 22);
             this.info_menu.Text = "Info";
             this.info_menu.Click += new System.EventHandler(this.Info_menu_Click);
             // 
             // update_menu
             // 
             this.update_menu.Name = "update_menu";
-            this.update_menu.Size = new System.Drawing.Size(180, 22);
+            this.update_menu.Size = new System.Drawing.Size(121, 22);
             this.update_menu.Text = "Update...";
             this.update_menu.Click += new System.EventHandler(this.Update_menu_Click);
             // 
@@ -170,9 +171,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Auto Spam - Phan Quang Dai";
+            this.Text = "Auto Key - Phan Quang Đại";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

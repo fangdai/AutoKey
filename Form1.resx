@@ -123,4 +123,29 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAG8jAABvIwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEpa1wBKWtcASlrXJUpa1yBKWtcASlrXAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEpa1wBKWtcASlrXNEpa18hKWte+SlrXK0pa1wBKWtcAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEpa1wBKWtcASlrXQUpa19ZKWtf/SlrX/0pa185KWtc6SlrXAEpa
+        1wAAAAAAAAAAAAAAAAAAAAAAAAAAAEpa1wBKWtcBSlrXUEpa1+BKWtf/SlrX/0pa1/9KWtf/SlrX20pa
+        10pKWtcBSlrXAAAAAAAAAAAAAAAAAEpa1wBKWtcDSlrXYEpa1+lKWtf/SlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtfmSlrXXEpa1wNKWtcAAAAAAEpa1wBKWtcFSlrXbkpa1/BKWtf/SlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1+9KWtduSlrXBUpa1wBKWtcASlrXZEpa1/NKWtf/SlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX80pa12RKWtcASlrXNEpa195KWtf/SlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtfeSlrXNEpa15lKWtf/SlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa15lKWtfhSlrX/0pa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtfhSlrX+kpa1/9KWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX+kpa1+pKWtf/SlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWtf/SlrX/0pa1+pKWterSlrX/0pa
+        1/9KWtf/SlrX/0pa1/9KWtf/SlrX9Upa1/dKWtf/SlrX/0pa1/9KWtf/SlrX/0pa1/9KWterSlrXPEpa
+        199KWtf/SlrX/0pa1/9KWtf/SlrX/Upa14pKWteXSlrX/0pa1/9KWtf/SlrX/0pa1/9KWtfeSlrXO0pa
+        1wBKWtdMSlrXzkpa1/hKWtf8SlrX6kpa145KWtcQSlrXFUpa15VKWtfrSlrX/Epa1/hKWtfOSlrXS0pa
+        1wBKWtcASlrXAEpa1x5KWtdXSlrXZUpa1zpKWtcHSlrXAEpa1wBKWtcISlrXO0pa12VKWtdXSlrXHkpa
+        1wBKWtcA/n8AAPw/AAD4HwAA4AcAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACAAQAAwYMAAA==
+</value>
+  </data>
 </root>
