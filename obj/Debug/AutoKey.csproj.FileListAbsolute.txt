@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\bin\Debug\AutoKey.exe.config
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\bin\Debug\AutoKey.exe
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\bin\Debug\AutoKey.pdb
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.Form1.resources
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.Properties.Resources.resources
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.exe
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.pdb
+C:\Users\Dell\source\repos\Windows_Form\AutoKey\obj\Debug\AutoKey.About.resources
