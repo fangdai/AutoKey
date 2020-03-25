@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 using System.IO;
 using System.Net;
+using System.Runtime.InteropServices; //Movealbe Form
 namespace AutoKey
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+            this.menuStrip1.BackColor = Color.Black;
+            this.menuStrip1.ForeColor = Color.Lime;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -91,7 +95,7 @@ namespace AutoKey
             WebResponse ws = wr.GetResponse();
             StreamReader sr = new StreamReader(ws.GetResponseStream());
 
-            string currentversion = "1.0.0.0\n";
+            string currentversion = "1.0.0.1\n";
             string newversion = sr.ReadToEnd();
 
             if (currentversion.Contains(newversion))
@@ -104,5 +108,57 @@ namespace AutoKey
             }
             Console.ReadLine();
         }
+
+        private void TheCodeBoardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.textBox1.ForeColor = Color.Lime;
+            this.textBox1.BackColor = Color.Black;
+            this.textBox2.ForeColor = Color.Lime;
+            this.textBox2.BackColor = Color.Black;
+            this.textBox3.ForeColor = Color.Lime;
+            this.textBox3.BackColor = Color.Black;
+            this.BackColor = Color.Black;
+            this.ForeColor = Color.Lime;
+            this.menuStrip1.BackColor = Color.Black;
+            this.menuStrip1.ForeColor = Color.Lime;
+
+        }
+
+        private void BasicStyleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.textBox1.ForeColor = Color.Yellow;
+            this.textBox1.BackColor = Color.Red;
+            this.textBox2.ForeColor = Color.Yellow;
+            this.textBox2.BackColor = Color.Red;
+            this.textBox3.ForeColor = Color.Yellow;
+            this.textBox3.BackColor = Color.Red;
+            this.menuStrip1.ForeColor = Color.Yellow;
+            this.menuStrip1.BackColor = Color.Red;
+            this.BackColor = Color.Red;
+            this.ForeColor = Color.Yellow;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+        //Movealbe Form
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        //Moveable Form
     }
 }
