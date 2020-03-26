@@ -11,18 +11,97 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using System.Runtime.InteropServices; //Movealbe Form
+
+
 namespace AutoKey
 {
     
     public partial class Form1 : Form
     {
+        //// DLL libraries used to manage hotkeys
+        //[DllImport("user32.dll")]
+        //public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);
+        //[DllImport("user32.dll")]
+        //public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+        //const int MYACTION_HOTKEY_ID = 1;
+        //// Modifier keys codes: Alt = 1, Ctrl = 2, Shift = 4, Win = 8
+        //// Compute the addition of each combination of the keys you want to be pressed
+        //// ALT+CTRL = 1 + 2 = 3 , CTRL+SHIFT = 2 + 4 = 6...
+        //RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID, 6, (int) Keys.F12);
+        //protected override void WndProc(ref Message m)
+        //{
+        //    if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID)
+        //    {
+        //        // My hotkey has been typed
+
+        //        // Do what you want here
+        //        // ...
+        //    }
+        //    base.WndProc(ref m);
+        //}
         public Form1()
         {
             InitializeComponent();
-            this.menuStrip1.BackColor = Color.Black;
-            this.menuStrip1.ForeColor = Color.Lime;
+            //this.menuStrip1.BackColor = Color.Black;
+            //this.menuStrip1.ForeColor = Color.Lime;
+            this.menuStrip1.Renderer = new ToolStripProfessionalRenderer(new CodeBoardColorTable());
         }
+        public class CodeBoardColorTable : ProfessionalColorTable
+        {
+            public override Color ToolStripDropDownBackground {get{return Color.LimeGreen;}}
 
+            public override Color ImageMarginGradientBegin {get{ return Color.Lime;} }
+
+            public override Color ImageMarginGradientMiddle{get {return Color.Lime;}}
+
+            public override Color ImageMarginGradientEnd{get { return Color.Lime;}}
+
+            public override Color MenuBorder{ get{ return Color.Lime; }}
+
+            public override Color MenuItemBorder{ get { return Color.Lime;}}
+
+            public override Color MenuItemSelected{get{return Color.Green;}}
+
+            public override Color MenuStripGradientBegin {get {return Color.Lime;}}
+
+            public override Color MenuStripGradientEnd{ get {return Color.Lime; } }
+
+            public override Color MenuItemSelectedGradientBegin {get {return Color.Green; } }
+
+            public override Color MenuItemSelectedGradientEnd{get {return Color.Green; }}
+
+            public override Color MenuItemPressedGradientBegin{ get{return Color.Green;}}
+
+            public override Color MenuItemPressedGradientEnd{ get{return Color.Green;}}
+        }
+        public class RoyalColorTable : ProfessionalColorTable
+        {
+            public override Color ToolStripDropDownBackground { get { return Color.Red; } }
+
+            public override Color ImageMarginGradientBegin { get { return Color.Yellow; } }
+
+            public override Color ImageMarginGradientMiddle { get { return Color.Yellow; } }
+
+            public override Color ImageMarginGradientEnd { get { return Color.LightYellow; } }
+
+            public override Color MenuBorder { get { return Color.Yellow; } }
+
+            public override Color MenuItemBorder { get { return Color.Yellow; } }
+
+            public override Color MenuItemSelected{get { return Color.LightYellow; }}
+
+            public override Color MenuStripGradientBegin { get { return Color.Yellow; } }
+
+            public override Color MenuStripGradientEnd { get { return Color.Yellow; } }
+
+            public override Color MenuItemSelectedGradientBegin { get { return Color.Yellow; } }
+
+            public override Color MenuItemSelectedGradientEnd { get { return Color.Orange; } }
+
+            public override Color MenuItemPressedGradientBegin { get { return Color.Yellow; } }
+
+            public override Color MenuItemPressedGradientEnd { get { return Color.Orange; } }
+        }
         private void Button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You have 5 seconds to choose where to spam!");
@@ -87,6 +166,7 @@ namespace AutoKey
             {
                 timer1.Stop();
             }
+            
         }
 
         private void Update_menu_Click(object sender, EventArgs e)
@@ -111,6 +191,8 @@ namespace AutoKey
 
         private void TheCodeBoardToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            this.menuStrip1.Renderer = new ToolStripProfessionalRenderer(new CodeBoardColorTable());
             this.textBox1.ForeColor = Color.Lime;
             this.textBox1.BackColor = Color.Black;
             this.textBox2.ForeColor = Color.Lime;
@@ -126,6 +208,8 @@ namespace AutoKey
 
         private void BasicStyleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            this.menuStrip1.Renderer = new ToolStripProfessionalRenderer(new RoyalColorTable());
             this.textBox1.ForeColor = Color.Yellow;
             this.textBox1.BackColor = Color.Red;
             this.textBox2.ForeColor = Color.Yellow;
